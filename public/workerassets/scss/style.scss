@@ -1,0 +1,588 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+@import 'variable';
+/* ===================================== Basic CSS ==================================== */
+@import 'base/basic_setup';
+
+/* =====================================  Profile Card Design CSS ==================================== */
+.profile-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.profile-cover{
+    box-shadow: 0 5px 10px rgba(0,9,128,.035), 0 7px 18px rgba(0,9,128,.05);
+    text-align: center;
+    background-color: #FFF;
+    
+    .image-details{
+        padding: 30px 30px 30px;
+        img{
+            border-radius: 50%;
+            box-shadow: 0 0 40px 0 rgba(51,51,51,.08);
+            border-radius: 50%;
+            border: 5px solid #fff;
+            width: 120px;
+        }
+        h5{
+           font-weight: 600;
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+        p{
+            padding: 5px 20px;
+            border-radius: 50px;
+            background-color: rgba(37,131,253,.07);
+            color: #2583fd;
+            width: fit-content;
+            font-weight: 500;
+            margin: auto;
+            font-size: .8rem;
+        }
+    }
+    .counts{
+        padding: 10px 30px;
+        .count-box{
+            display: flex;
+            .boxs{
+                flex: 1;
+                i{
+                    color: #2583fd;
+                    margin-bottom: 15px;
+                }
+                svg{
+                    color: #2583fd;
+                    font-size: .8rem;
+                    margin-bottom: 10px;
+                }
+                b{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: .83rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .top-links{
+        padding: 15px 25px;
+        i{
+            font-size: .95rem;
+            cursor: pointer;
+        }
+        a{
+             &::after{
+                display: none;
+            }
+        }
+        .share{
+            float: left;
+            i{
+                color: #f52813;
+               
+               
+            }
+        }
+        .cv{
+            float: right;
+            i{
+                color: #2583fd;
+            }
+        }
+    }
+    .bottom-links{
+        border-top: 1px solid #cccccc75;
+        margin-top: 60px;
+        ul{
+            width: 100%;
+            li{
+                float: left;
+                 width: 20%;
+                text-align: center;
+                padding-top: 15px;
+                 padding-bottom: 15px;
+                color: #928d8d;
+            }
+            .fa-user-plus{
+                box-shadow: 0 4px 8px 0 rgba(249,75,57,.48);
+                background: #f94b39;
+                width: 58px;
+                height: 58px;
+                border-radius: 50px;
+                color: #FFF;
+                padding-top: 20px;
+                
+                text-align: center;
+                margin-top: -45px;
+                margin-left: -24px;
+                position: absolute;
+            }
+        }
+    }
+}
+.shar-icons{ 
+    border: 0px;
+    @include shado-1();
+    a{
+        font-size: .85rem;
+        padding: 7px 12px;
+        i{
+            margin-right: 5px;
+        }
+    }
+    .fb{
+        color: #3b5998;
+    }
+    .tw{
+        color: #00acee;
+    }
+    .pin{
+        color: #c8232c;
+    }
+    .ins{
+        color: #3f729b;
+    }
+}
+
+/* =====================================  About Me CSS ==================================== */
+
+.profile-detail{
+    padding: 30px;
+    background-color: #FFF;
+     box-shadow: 0 5px 10px rgba(0,9,128,.035), 0 7px 18px rgba(0,9,128,.05);
+     overflow: hidden;
+    width: 100%;
+    .about{
+        margin-bottom: 20px;
+            margin-top: 25px;
+        .bimg{
+            border-right: 1px solid #cccccc2b;
+            padding-left: 0px;
+        }
+        .about-detail{
+            .detal-jumbo{
+                 h3{
+                    font-size: 1.2rem !important;
+                     font-weight: 600;
+                     margin-bottom: 13px;
+                }
+                p{
+                    text-indent: 20px;
+                   font-size: .9rem;
+                }
+                margin-bottom: 6px;
+            }
+            .links{
+                    padding: 25px 0px;
+                    .btn-link li{
+                        float: left;
+                        padding: 3px 13px;
+                        border-radius: 15px;
+                        font-weight: 500;
+                        margin-right: 10px;
+                        color: #888;
+                        @media screen and (max-width:483px){
+                            margin-right: 5px !important;
+                            width: 100%;
+                            margin-bottom: 10px;
+                        }
+                        i{
+                            margin-top: 5px;
+                        }
+                        a{
+                            color: #888;
+                        }
+                        
+                    }
+                    .download{
+                        background-color: rgba(37, 131, 253, 0.07);
+                        a{
+                            color: #2583fd !important;
+                        }
+                        
+                    }
+                    .hire{
+                        background-color: rgba(249, 75, 57, 0.19);
+                        padding-right: 30px !important;
+                        padding-left: 30px !important;
+                        a{
+                            color: #f94b39 !important;
+                        }
+                    }
+                    .social-link{
+                        float: right;
+                        li{
+                            float: left;
+                            padding: 5px;
+                            border:1px solid #888;
+                            border-radius: 50px;
+                            width: 35px;
+                            text-align: center;
+                            margin-right: 10px;
+                            @media screen and (max-width:483px){
+                                margin-right: 5px !important;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                    @media screen and (max-width:1200px){
+                        padding: 20px 0px;
+                        .social-link{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            .personali{
+                ul{
+                    li{
+                        width: 50%;
+                        float: left;
+                        padding: 3px 0px;
+                        display: table-cell;
+                        margin: auto;
+                        font-size: .9rem;
+                        color: #2d2d2d;
+                        svg{
+                            font-size: .8rem;
+                            width: 18px;
+                            padding-top: 9px;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.right-title .icob i {
+  font-size: 32px;
+  margin-top: 6px;
+  color: #7f298c;
+    width: 40px;
+    
+}
+.right-title{
+    margin-bottom: 10px;
+    .icob{
+        text-align: center;
+        i{
+            font-size: 1.2rem;
+            padding: 10px;
+            border: 2px solid #f4f6f7;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            margin-top: -11px;
+            padding-top: 13px;
+            color: #CCC;
+        }
+    }
+    .titb{
+        padding-left: 20px;
+        h2 {
+            padding-bottom: 5px;
+            border-bottom: 2px solid #f4f6f7;
+            font-size: 23px;
+            color: #545454; 
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+    } 
+} 
+.title-2{
+    h2{
+        width: 100%;
+        display: flex;
+        padding-left: 20px;
+        font-size: 1rem;
+        font-weight: 700;    
+        padding-top: 25px;
+        &::before{
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: #2583fd;
+            margin-left: -70px;
+            left: -3px;
+            border-radius: 54% 46% 80% 20%/20% 64% 36% 80%;
+            margin-right: 20px;
+            margin-top: -8px;
+        }
+    }
+}
+
+/* =====================================  Skills CSS ==================================== */
+
+.skills{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .c100.big {
+        font-size: 90px;
+         margin: auto;
+        float: none;
+    }
+    .skilcol{
+        h6{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+
+/* =====================================  Services CSS ==================================== */
+
+.service-row{
+    margin-top: 30px;
+    .seervic-col{
+        margin-bottom: 20px;
+        .icons{
+            .iconder{
+                margin-right: 0px;
+                padding-top: 10px;
+                text-align: center;
+                background: #ebf0fc;
+                min-width: 30px;
+                min-height: 30px;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 54% 46% 80% 20%/20% 64% 36% 80%;
+                width: 48px;
+            }
+            
+        }
+        .sdrtg{
+            h4{
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+            p{
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+/* =====================================  My Hobbies CSS ==================================== */
+
+.hobbies{
+    .hoby-row{
+        .hoby{
+            width: 100%;
+            li{
+                float: left;padding: 10px;
+                width: 33.33%;
+                font-weight: 600;
+                font-size: .9rem;
+                i{
+                    margin-right: 10px;
+                    width: 43px;
+                    height: 43px;
+                    border-radius: 50px;
+                    padding-top: 12px;
+                    padding-left: 12px;
+                    background-color: #ebf0fc;
+                    color: #2583fd;
+                }
+            }
+        }
+    }
+}
+
+/* =====================================  Testimonials CSS ==================================== */
+
+.test-row{
+   margin-top: 20px;
+   .test-key{
+       text-align: center;
+       padding: 15px;
+       img{
+           width: 70px;
+           border-radius: 50%;
+           margin: auto;
+       }
+       h5{
+           font-size: .95rem;
+           margin-top: 10px;
+           color: #444;
+       }
+       a{
+           color: #3273e7;
+
+           font-size: .9rem;
+       }
+       p{
+           margin-top: 2px;
+           font-size: .84rem;
+           line-height: 30px;
+       }
+   }
+    .icons{
+        i{
+           font-size: .7rem;
+            color: #ffa500; 
+        }
+        
+    }
+}
+.owl-nav{
+    display: flex;
+    position: absolute;
+    top: -53px;
+    right: -33px;
+    .owl-prev{
+        margin-right: 10px;
+        padding: 5px 15px;
+        border: 1px solid #CCC;
+        border-radius: 5px;
+    }
+    .owl-next{
+        margin-right: 10px;
+        padding: 5px 20px;
+         border-radius: 5px;
+         padding: 5px 15px;
+        border: 1px solid #CCC;
+    }
+}
+
+.test-row{
+    margin-bottom: 20px;
+}
+
+
+/* =====================================  Portfolio CSS ==================================== */
+
+.portfolio{
+    margin-top: 20px;
+    .gallery-filter {
+      width: 100%;
+      text-align: center; }
+      .gallery-filter .btn {
+        background-color: $color-primary; }
+
+    .gallery {
+        @include big-padding();
+      padding: 30px;
+      background-color: #FFF; }
+
+    .gallery-title {
+      font-size: 36px;
+      color: #00ab9f;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 70px; }
+
+    .gallery-title:after {
+      content: "";
+      position: absolute;
+      width: 7.5%;
+      left: 46.5%;
+      height: 45px;
+      border-bottom: 1px solid $color-primary; }
+
+    .filter-button {
+      font-size: 18px;
+        padding: 3px 10px;
+        font-size: .9rem;
+        @include shado-1();
+      border: 1px solid $color-primary;
+      border-radius: 5px;
+      text-align: center;
+      color: #FFF;
+      margin-bottom: 30px; }
+
+    .filter-button:hover {
+     font-size: .9rem;
+      border: 1px solid $color-primary;
+      border-radius: 5px;
+      text-align: center;
+      color: $color-primary;;
+      background-color: #fff }
+
+    .btn-default:active .filter-button:active {
+      background-color: $color-primary;
+      color: white; }
+
+    .port-image {
+      width: 100%; }
+
+    .gallery_product {
+      margin-bottom: 30px; }
+
+}
+
+/* =====================================  Hire Me CSS ==================================== */
+
+.hire-me-row{
+    margin-top: 30px;
+    .singe-col{
+        margin-bottom: 30px;
+        .icons{
+              margin-top: 10px; 
+            font-size: .7rem;
+        }
+        .drtg{
+            b{
+                font-weight: 600;
+            }
+            p{
+                
+                font-size: .85rem;
+            }
+        }
+    }
+}
+
+/* =====================================  Contact Me CSS ==================================== */
+
+.contact-us{
+    margin-top: 30px;
+    iframe{
+        height: 250px;
+        width: 100%;
+    }
+}
+
+
+.contact-titl p{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: .9rem;
+}
+.contact-form{
+    .row-form{
+        label{
+            font-weight: 500;
+            font-size: .95rem;
+        }
+        input{
+            border-radius: 0px;
+        }
+        textarea{
+            margin-bottom: 0px;
+        }
+    }
+}
+.scroll-to-fixed-fixed{
+    padding-top: 50px;
+}
+
+/* ===================================== My Resume CSS ==================================== */
+@import 'component/time_line';
+
+/* ===================================== Responsive Style CSS ==================================== */
+@import 'response/responsive';

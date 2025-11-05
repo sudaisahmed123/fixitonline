@@ -1,0 +1,36 @@
+@media screen and (max-width: 991px){
+    .profile-detail{
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (max-width: 1175px){
+    .profile-container{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    .profile-detail .about .bimg{
+        text-align: center;
+    }
+    .about-detail{
+        padding-top: 25px;
+    }
+    .skills .skilcol{
+        margin-bottom: 30px;
+    }
+    .hobbies .hoby-row .hoby li{
+        width: 50%;
+    }
+}
+@media screen and (max-width:529px){
+    .profile-detail .about .about-detail .personali ul li{
+        width: 100%;
+    }
+    .profile-detail{
+        padding: 20px;
+    }
+    .title-2 h2::before{
+            margin-left: -67px;
+    }
+}

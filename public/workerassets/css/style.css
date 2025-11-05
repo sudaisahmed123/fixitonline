@@ -1,0 +1,1275 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
+/* ===================================== Basic CSS ==================================== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #444;
+}
+
+a:hover {
+    color: #444;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a:hover,
+a:focus,
+input,
+textarea {
+    text-decoration: none;
+    outline: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.cp {
+    cursor: pointer;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.hid {
+    display: none;
+}
+
+.top-mar {
+    margin-top: 15px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+::placeholder {
+    color: #747f8a !important;
+    font-size: 13px;
+    opacity: .5 !important;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Work Sans", Arial, sans-serif;
+    color: #545454;
+}
+
+strong {
+    font-family: "Work Sans", Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f1f145 !important;
+    font-family: "Work Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: #6A6A6A;
+    overflow-x: hidden;
+}
+
+.session-title {
+    padding: 30px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.session-title h2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.session-title p {
+    max-width: 850px;
+    text-align: center;
+    float: none;
+    margin: auto;
+    font-size: .83rem;
+    margin-top: 15px;
+}
+
+.session-title span {
+    float: right;
+    font-style: italic;
+}
+
+.inner-title {
+    padding: 20px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #ccccccc4;
+    display: block;
+    padding-right: 0px;
+}
+
+.inner-title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid #863dd9;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    width: 300px;
+}
+
+.inner-title p {
+    width: 100%;
+    text-align: center;
+}
+
+.inner-title .btn {
+    float: right;
+    margin-top: -38px;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.page-nav {
+    background-size: 100%;
+    padding: 68px;
+    text-align: center;
+    background-color: #eaeaea;
+}
+
+.page-nav ul {
+    float: none;
+    margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .page-nav {
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-nav {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .page-nav {
+        padding-top: 200px;
+    }
+}
+
+.page-nav h2 {
+    font-size: 28px;
+    width: 100%;
+    font-weight: 700;
+    color: #444;
+}
+
+@media screen and (max-width: 600px) {
+    .page-nav h2 {
+        font-size: 26px;
+    }
+}
+
+.page-nav ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-size: .93rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.page-nav ul li i {
+    width: 30px;
+    text-align: center;
+    color: #444;
+}
+
+.page-nav ul li a {
+    color: #444;
+    font-size: .93rem;
+    font-weight: 600;
+}
+
+.btn-success {
+    background-color: #51be78;
+    border-color: #51be78;
+}
+
+.btn-success:hover {
+    background-color: #51be78 !important;
+    border-color: #51be78 !important;
+}
+
+.btn-success:active {
+    background-color: #51be78 !important;
+    border-color: #51be78 !important;
+}
+
+.btn-success:focus {
+    background-color: #51be78 !important;
+    border-color: #51be78 !important;
+    box-shadow: none !important;
+}
+
+.btn-primary {
+    background-color: #2583fd;
+    border-color: #2583fd;
+}
+
+.btn-primary:hover {
+    background-color: #2583fd !important;
+    border-color: #2583fd !important;
+}
+
+.btn-primary:active {
+    background-color: #2583fd !important;
+    border-color: #2583fd !important;
+}
+
+.btn-primary:focus {
+    background-color: #2583fd !important;
+    border-color: #2583fd !important;
+    box-shadow: none !important;
+}
+
+.btn {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border: 0px;
+}
+
+.btn-light {
+    background-color: #FFF;
+    color: #3F3F3F;
+}
+
+.collapse.show {
+    display: block !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 0px;
+}
+
+.form-control {
+    background-color: #F8F8F8 !important;
+    border: 1px solid #ced4da !important;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    background-color: #FFF;
+    border-color: #CCC !important;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 10px 15px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =====================================  Profile Card Design CSS ==================================== */
+
+.profile-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.profile-cover {
+    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
+    text-align: center;
+    background-color: #FFF;
+    position: relative;
+}
+
+.profile-cover .image-details {
+    padding: 30px 30px 30px;
+}
+
+.profile-cover .image-details img {
+    border-radius: 50%;
+    box-shadow: 0 0 40px 0 rgba(51, 51, 51, 0.08);
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 120px;
+    height:120px;
+}
+
+.profile-cover .image-details h5 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.profile-cover .image-details p {
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: rgba(37, 131, 253, 0.07);
+    color: #2583fd;
+    width: fit-content;
+    font-weight: 500;
+    margin: auto;
+    font-size: .8rem;
+}
+
+.profile-cover .counts {
+    padding: 10px 30px;
+}
+
+.profile-cover .counts .count-box {
+    display: flex;
+}
+
+.profile-cover .counts .count-box .boxs {
+    flex: 1;
+}
+
+.profile-cover .counts .count-box .boxs i {
+    color: #2583fd;
+    margin-bottom: 15px;
+}
+
+.profile-cover .counts .count-box .boxs svg {
+    color: #2583fd;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.profile-cover .counts .count-box .boxs b {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.profile-cover .counts .count-box .boxs p {
+    font-size: .83rem;
+    font-weight: 500;
+}
+
+.profile-cover .top-links {
+    padding: 15px 25px;
+}
+
+.profile-cover .top-links i {
+    font-size: .95rem;
+    cursor: pointer;
+}
+
+.profile-cover .top-links a::after {
+    display: none;
+}
+
+.profile-cover .top-links .share {
+    float: left;
+}
+
+.profile-cover .top-links .share i {
+    color: #f52813;
+}
+
+.profile-cover .top-links .cv {
+    float: right;
+}
+
+.profile-cover .top-links .cv i {
+    color: #2583fd;
+}
+
+.profile-cover .bottom-links {
+    border-top: 1px solid #cccccc75;
+    margin-top: 60px;
+}
+
+.profile-cover .bottom-links ul {
+    width: 100%;
+}
+
+.profile-cover .bottom-links ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #928d8d;
+}
+
+.profile-cover .bottom-links ul .fa-user-plus {
+    box-shadow: 0 4px 8px 0 rgba(249, 75, 57, 0.48);
+    background: #f94b39;
+    width: 58px;
+    height: 58px;
+    border-radius: 50px;
+    color: #FFF;
+    padding-top: 20px;
+    text-align: center;
+    /* margin-top: -45px;
+    margin-left: -10px; */
+    /* position: absolute; */
+    position: relative;
+}
+
+.shar-icons {
+    border: 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shar-icons a {
+    font-size: .85rem;
+    padding: 7px 12px;
+}
+
+.shar-icons a i {
+    margin-right: 5px;
+}
+
+.shar-icons .fb {
+    color: #3b5998;
+}
+
+.shar-icons .tw {
+    color: #00acee;
+}
+
+.shar-icons .pin {
+    color: #c8232c;
+}
+
+.shar-icons .ins {
+    color: #3f729b;
+}
+
+/* =====================================  About Me CSS ==================================== */
+
+.profile-detail {
+    padding: 30px;
+    background-color: #FFF;
+    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
+    overflow: hidden;
+    width: 100%;
+}
+
+.profile-detail .about {
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.profile-detail .about .bimg {
+    border-right: 1px solid #cccccc2b;
+    padding-left: 0px;
+}
+
+.profile-detail .about .about-detail .detal-jumbo {
+    margin-bottom: 6px;
+}
+
+.profile-detail .about .about-detail .detal-jumbo h3 {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.profile-detail .about .about-detail .detal-jumbo p {
+    text-indent: 20px;
+    font-size: .9rem;
+}
+
+.profile-detail .about .about-detail .links {
+    padding: 25px 0px;
+}
+
+.profile-detail .about .about-detail .links .btn-link li {
+    float: left;
+    padding: 3px 13px;
+    border-radius: 15px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #888;
+}
+
+@media screen and (max-width: 483px) {
+    .profile-detail .about .about-detail .links .btn-link li {
+        margin-right: 5px !important;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.profile-detail .about .about-detail .links .btn-link li i {
+    margin-top: 5px;
+}
+
+.profile-detail .about .about-detail .links .btn-link li a {
+    color: #888;
+}
+
+.profile-detail .about .about-detail .links .download {
+    background-color: rgba(37, 131, 253, 0.07);
+}
+
+.profile-detail .about .about-detail .links .download a {
+    color: #2583fd !important;
+}
+
+.profile-detail .about .about-detail .links .hire {
+    background-color: rgba(249, 75, 57, 0.19);
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+.profile-detail .about .about-detail .links .hire a {
+    color: #f94b39 !important;
+}
+
+.profile-detail .about .about-detail .links .social-link {
+    float: right;
+}
+
+.profile-detail .about .about-detail .links .social-link li {
+    float: left;
+    padding: 5px;
+    border: 1px solid #888;
+    border-radius: 50px;
+    width: 35px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 483px) {
+    .profile-detail .about .about-detail .links .social-link li {
+        margin-right: 5px !important;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .profile-detail .about .about-detail .links {
+        padding: 20px 0px;
+    }
+    .profile-detail .about .about-detail .links .social-link {
+        margin-top: 20px;
+    }
+}
+
+.profile-detail .about .about-detail .personali ul li {
+    width: 50%;
+    float: left;
+    padding: 3px 0px;
+    display: table-cell;
+    margin: auto;
+    font-size: .9rem;
+    color: #2d2d2d;
+}
+
+.profile-detail .about .about-detail .personali ul li svg {
+    font-size: .8rem;
+    width: 18px;
+    padding-top: 9px;
+    margin-right: 4px;
+}
+
+.right-title .icob i {
+    font-size: 32px;
+    margin-top: 6px;
+    color: #7f298c;
+    width: 40px;
+}
+
+.right-title {
+    margin-bottom: 10px;
+}
+
+.right-title .icob {
+    text-align: center;
+}
+
+.right-title .icob i {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid #f4f6f7;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -11px;
+    padding-top: 13px;
+    color: #CCC;
+}
+
+.right-title .titb {
+    padding-left: 20px;
+}
+
+.right-title .titb h2 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f4f6f7;
+    font-size: 23px;
+    color: #545454;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.title-2 h2 {
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.title-2 h2::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #2583fd;
+    margin-left: -70px;
+    left: -3px;
+    border-radius: 54% 46% 80% 20%/20% 64% 36% 80%;
+    margin-right: 20px;
+    margin-top: -8px;
+}
+
+/* =====================================  Skills CSS ==================================== */
+
+.skills {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skills .c100.big {
+    font-size: 90px;
+    margin: auto;
+    float: none;
+}
+
+.skills .skilcol h6 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* =====================================  Services CSS ==================================== */
+
+.service-row {
+    margin-top: 30px;
+}
+
+.service-row .seervic-col {
+    margin-bottom: 20px;
+}
+
+.service-row .seervic-col .icons .iconder {
+    margin-right: 0px;
+    padding-top: 10px;
+    text-align: center;
+    background: #ebf0fc;
+    min-width: 30px;
+    min-height: 30px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 54% 46% 80% 20%/20% 64% 36% 80%;
+    width: 48px;
+}
+
+.service-row .seervic-col .sdrtg h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.service-row .seervic-col .sdrtg p {
+    font-size: .9rem;
+}
+
+/* =====================================  My Hobbies CSS ==================================== */
+
+.hobbies .hoby-row .hoby {
+    width: 100%;
+}
+
+.hobbies .hoby-row .hoby li {
+    float: left;
+    padding: 10px;
+    width: 33.33%;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.hobbies .hoby-row .hoby li i {
+    margin-right: 10px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50px;
+    padding-top: 12px;
+    padding-left: 12px;
+    background-color: #ebf0fc;
+    color: #2583fd;
+}
+
+/* =====================================  Testimonials CSS ==================================== */
+
+.test-row {
+    margin-top: 20px;
+}
+
+.test-row .test-key {
+    text-align: center;
+    padding: 15px;
+}
+
+.test-row .test-key img {
+    width: 70px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.test-row .test-key h5 {
+    font-size: .95rem;
+    margin-top: 10px;
+    color: #444;
+}
+
+.test-row .test-key a {
+    color: #3273e7;
+    font-size: .9rem;
+}
+
+.test-row .test-key p {
+    margin-top: 2px;
+    font-size: .84rem;
+    line-height: 30px;
+}
+
+.test-row .icons i {
+    font-size: .7rem;
+    color: #ffa500;
+}
+
+.owl-nav {
+    display: flex;
+    position: absolute;
+    top: -53px;
+    right: -33px;
+}
+
+.owl-nav .owl-prev {
+    margin-right: 10px;
+    padding: 5px 15px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.owl-nav .owl-next {
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: 1px solid #CCC;
+}
+
+.test-row {
+    margin-bottom: 20px;
+}
+
+/* =====================================  Portfolio CSS ==================================== */
+
+.portfolio {
+    margin-top: 20px;
+}
+
+.portfolio .gallery-filter {
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio .gallery-filter .btn {
+    background-color: #2583fd;
+}
+
+.portfolio .gallery {
+    padding: 50px;
+    padding: 30px;
+    background-color: #FFF;
+}
+
+@media screen and (max-width: 940px) {
+    .portfolio .gallery {
+        padding: 30px 10px;
+    }
+}
+
+.portfolio .gallery-title {
+    font-size: 36px;
+    color: #00ab9f;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.portfolio .gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #2583fd;
+}
+
+.portfolio .filter-button {
+    font-size: 18px;
+    padding: 3px 10px;
+    font-size: .9rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid #2583fd;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+
+.portfolio .filter-button:hover {
+    font-size: .9rem;
+    border: 1px solid #2583fd;
+    border-radius: 5px;
+    text-align: center;
+    color: #2583fd;
+    background-color: #fff;
+}
+
+.portfolio .btn-default:active .filter-button:active {
+    background-color: #2583fd;
+    color: white;
+}
+
+.portfolio .port-image {
+    width: 100%;
+}
+
+.portfolio .gallery_product {
+    margin-bottom: 30px;
+}
+
+/* =====================================  Hire Me CSS ==================================== */
+
+.hire-me-row {
+    margin-top: 30px;
+}
+
+.hire-me-row .singe-col {
+    margin-bottom: 30px;
+}
+
+.hire-me-row .singe-col .icons {
+    margin-top: 10px;
+    font-size: .7rem;
+}
+
+.hire-me-row .singe-col .drtg b {
+    font-weight: 600;
+}
+
+.hire-me-row .singe-col .drtg p {
+    font-size: .85rem;
+}
+
+/* =====================================  Contact Me CSS ==================================== */
+
+.contact-us {
+    margin-top: 30px;
+}
+
+.contact-us iframe {
+    height: 250px;
+    width: 100%;
+}
+
+.contact-titl p {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: .9rem;
+}
+
+.contact-form .row-form label {
+    font-weight: 500;
+    font-size: .95rem;
+}
+
+.contact-form .row-form input {
+    border-radius: 0px;
+}
+
+.contact-form .row-form textarea {
+    margin-bottom: 0px;
+}
+
+.scroll-to-fixed-fixed {
+    padding-top: 50px;
+}
+
+/* ===================================== My Resume CSS ==================================== */
+
+.resume-cover {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.cbp_tmtimeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.cbp_tmtimeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #eee;
+    left: 20%;
+    margin-left: -6px;
+}
+
+.cbp_tmtimeline>li {
+    position: relative;
+}
+
+.cbp_tmtimeline>li .cbp_tmtime {
+    padding-top: 13px;
+}
+
+.cbp_tmlabel h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cbp_tmlabel p {
+    font-size: .9rem;
+}
+
+.cbp_tmtimeline>li:first-child .cbp_tmtime span.large {
+    color: #444;
+    font-size: 17px !important;
+    font-weight: 700;
+}
+
+.cbp_tmtimeline>li:first-child .cbp_tmicon {
+    background: #fff;
+    color: #666;
+}
+
+.cbp_tmtimeline>li:first-child .cbp_tmicon i {
+    font-size: .9rem;
+    margin-top: -2px;
+}
+
+.cbp_tmtimeline>li:nth-child(odd) .cbp_tmtime span:last-child {
+    color: #444;
+    font-size: 13px;
+}
+
+.cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
+    background: #f0f1f366;
+}
+
+.cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: #f0f1f3;
+}
+
+.cbp_tmtimeline>li .empty span {
+    color: #777;
+}
+
+.cbp_tmtimeline>li .cbp_tmtime {
+    display: block;
+    width: 23%;
+    padding-right: 70px;
+    position: absolute;
+}
+
+.cbp_tmtimeline>li .cbp_tmtime span {
+    display: block;
+    text-align: right;
+}
+
+.cbp_tmtimeline>li .cbp_tmtime span:first-child {
+    font-size: 15px;
+    color: #3d4c5a;
+    font-weight: 700;
+}
+
+.cbp_tmtimeline>li .cbp_tmtime span:last-child {
+    font-size: 14px;
+    color: #444;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel {
+    margin: 0 0 15px 25%;
+    background: #f0f1f3;
+    padding: 1.2em;
+    position: relative;
+    border-radius: 5px;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel:after {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #f0f1f3;
+    border-width: 10px;
+    top: 10px;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel blockquote {
+    font-size: 16px;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel .map-checkin {
+    border: 5px solid rgba(235, 235, 235, 0.2);
+    -moz-box-shadow: 0px 0px 0px 1px #ebebeb;
+    -webkit-box-shadow: 0px 0px 0px 1px #ebebeb;
+    box-shadow: 0px 0px 0px 1px #ebebeb;
+    background: #fff !important;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel h2 {
+    margin: 0px;
+    padding: 0 0 10px 0;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel h2 a {
+    font-size: 15px;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel h2 a:hover {
+    text-decoration: none;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel h2 span {
+    font-size: 15px;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel p {
+    color: #444;
+}
+
+.cbp_tmtimeline>li .cbp_tmicon {
+    font-size: 1.1rem !important;
+}
+
+.cbp_tmtimeline>li .cbp_tmicon {
+    width: 40px;
+    height: 40px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.4em;
+    line-height: 40px;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    color: #fff;
+    background: #46a4da;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #f5f5f6;
+    text-align: center;
+    left: 20%;
+    top: 0;
+    margin: 0 0 0 -25px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .cbp_tmtimeline>li .cbp_tmtime {
+        padding-right: 60px;
+    }
+}
+
+@media screen and (max-width: 65.375em) {
+    .cbp_tmtimeline>li .cbp_tmtime span:last-child {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 47.2em) {
+    .cbp_tmtimeline:before {
+        display: none;
+    }
+    .cbp_tmtimeline>li .cbp_tmtime {
+        width: 100%;
+        position: relative;
+        padding: 0 0 20px 0;
+    }
+    .cbp_tmtimeline>li .cbp_tmtime span {
+        text-align: left;
+    }
+    .cbp_tmtimeline>li .cbp_tmlabel {
+        margin: 0 0 30px 0;
+        padding: 1em;
+        font-weight: 400;
+        font-size: 95%;
+    }
+    .cbp_tmtimeline>li .cbp_tmlabel:after {
+        right: auto;
+        left: 20px;
+        border-right-color: transparent;
+        border-bottom-color: #f5f5f6;
+        top: -20px;
+    }
+    .cbp_tmtimeline>li .cbp_tmicon {
+        position: relative;
+        float: right;
+        left: auto;
+        margin: -64px 5px 0 0px;
+    }
+    .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
+        border-right-color: transparent;
+        border-bottom-color: #f5f5f6;
+    }
+}
+
+.bg-green {
+    background-color: #50d38a !important;
+    color: #fff;
+}
+
+.bg-blush {
+    background-color: #ff758e !important;
+    color: #fff;
+}
+
+.bg-orange {
+    background-color: #ffc323 !important;
+    color: #fff;
+}
+
+.bg-info {
+    background-color: #2CA8FF !important;
+}
+
+/* ===================================== Responsive Style CSS ==================================== */
+
+@media screen and (max-width: 991px) {
+    .profile-detail {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    .profile-container {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile-detail .about .bimg {
+        text-align: center;
+    }
+    .about-detail {
+        padding-top: 25px;
+    }
+    .skills .skilcol {
+        margin-bottom: 30px;
+    }
+    .hobbies .hoby-row .hoby li {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 529px) {
+    .profile-detail .about .about-detail .personali ul li {
+        width: 100%;
+    }
+    .profile-detail {
+        padding: 20px;
+    }
+    .title-2 h2::before {
+        margin-left: -67px;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
